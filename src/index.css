@@ -2,24 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-gray-900 text-white;
-  }
+body {
+  background-color: #111827;
+  color: white;
 }
 
-@layer components {
-  .tetris-cell {
-    @apply border border-gray-700;
-    width: 30px;
-    height: 30px;
-  }
-  
-  .tetris-block-I { @apply bg-cyan-400 border-cyan-500; }
-  .tetris-block-O { @apply bg-yellow-400 border-yellow-500; }
-  .tetris-block-T { @apply bg-purple-400 border-purple-500; }
-  .tetris-block-S { @apply bg-green-400 border-green-500; }
-  .tetris-block-Z { @apply bg-red-400 border-red-500; }
-  .tetris-block-J { @apply bg-blue-400 border-blue-500; }
-  .tetris-block-L { @apply bg-orange-400 border-orange-500; }
+.tetris-cell {
+  border: 1px solid #374151;
+  width: 30px;
+  height: 30px;
+}
+
+.tetris-block-I {
+  background-color: #22d3ee;
+  border-color: #06b6d4;
+}
+
+.tetris-block-O {
+  background-color: #facc15;
+  border-color: #eab308;
+}
+
+.tetris-block-T {
+  background-color: #c084fc;
+  border-color: #a855f7;
+}
+
+.tetris-block-S {
+  background-color: #4ade80;
+  border-color: #22c55e;
+}
+
+.tetris-block-Z {
+  background-color: #f87171;
+  border-color: #ef4444;
+}
+
+.tetris-block-J {
+  background-color: #60a5fa;
+  border-color: #3b82f6;
+}
+
+.tetris-block-L {
+  background-color: #fb923c;
+  border-color: #f97316;
 }
