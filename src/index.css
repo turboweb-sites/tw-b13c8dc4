@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .tetris-cell {
+    @apply border border-gray-800;
+  }
+  
+  .tetris-block-I { @apply bg-cyan-400; }
+  .tetris-block-O { @apply bg-yellow-400; }
+  .tetris-block-T { @apply bg-purple-400; }
+  .tetris-block-S { @apply bg-green-400; }
+  .tetris-block-Z { @apply bg-red-400; }
+  .tetris-block-J { @apply bg-blue-400; }
+  .tetris-block-L { @apply bg-orange-400; }
+}
