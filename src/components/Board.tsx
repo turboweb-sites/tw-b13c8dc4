@@ -29,7 +29,7 @@ export default function Board({ board, piece }: BoardProps) {
     return (
       <div
         key={`${row}-${col}`}
-        className={`w-full h-full tetris-cell ${
+        className={`tetris-cell ${
           cellType ? `tetris-block-${cellType}` : 'bg-gray-900'
         }`}
       />
@@ -41,8 +41,8 @@ export default function Board({ board, piece }: BoardProps) {
       <div
         className="grid gap-0 mx-auto"
         style={{
-          gridTemplateColumns: `repeat(${BOARD_WIDTH}, minmax(0, 1fr))`,
-          gridTemplateRows: `repeat(${BOARD_HEIGHT}, minmax(0, 1fr))`,
+          gridTemplateColumns: `repeat(${BOARD_WIDTH}, 30px)`,
+          gridTemplateRows: `repeat(${BOARD_HEIGHT}, 30px)`,
           width: '300px',
           height: '600px',
         }}
